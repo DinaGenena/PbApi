@@ -2,7 +2,7 @@ package com.education.PbApi.ContactManager;
 
 import javax.persistence.Entity;
 
-@Entity   //for JPA to map to db table with the same name  
+//@Entity   //for JPA to map to db table with the same name  .. not implemented , using static arrayList instead 
 public class Person {
 
 
