@@ -16,15 +16,18 @@ public class PersonDAL {
 	   contactList.add(new Person("Person3","2222-3333","3333-3333","null","email@example.com") );
   }
 
-   
+   //return entire contactList
   public ArrayList<Person>listContacts (){ 
 	  return contactList  ;
    }  
    
+  //add new user to list
   public void addContact (Person person) {
 	  contactList.add(person);
   } 
    
+  
+  //find user by name
   public Person findContact(String name) {
 	  Person tmpPerson = null ; 
 	  List list = contactList.stream().filter(person -> name.equals(person.getName())).collect(Collectors.toList());
@@ -34,7 +37,20 @@ public class PersonDAL {
   } 
   
   
+  public void deleteContact(String name) {
+	  Person tmpPerson = null ; 
+	  List list = contactList.stream().filter(person -> name.equals(person.getName())).collect(Collectors.toList());
+	  if (list.size() != 0 )
+		{ tmpPerson = (Person) list.get(0);
+		  contactList.remove(tmpPerson) ;
+		}
+	  
+	  
+  } 
+  
+  
    
+  
  }
    
    
