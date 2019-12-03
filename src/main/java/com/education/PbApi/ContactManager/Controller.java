@@ -24,22 +24,22 @@ public class Controller {
 		 return personDAL.listContacts();
 	}
 		
-		@GetMapping("/contactList/{name}")	
+	  @GetMapping("/contactList/{name}")	
    public Person findContact(@PathVariable String name) {  //setting the parameter to be read from the URL/path 	
 		return personDAL.findContact(name) ;
    }	
 		
-		@PostMapping("/contactList")
+	  @PostMapping("/contactList")
    public void addContact(@RequestBody Person person) {  //read person fields from http request body    
 		personDAL.addContact(person);   
    }
 		
-      @DeleteMapping("/contactList/{name}")
+     @DeleteMapping("/contactList/{name}")
   public void deleteContact(@PathVariable String name) { //delete contact by name 
 	  personDAL.deleteContact(name);
   }
    
-  	@PutMapping("/contactList/update/{name}")  //implementing put method by updating fields of previous contact
+  	  @PutMapping("/contactList/update/{name}")  //implementing put method by updating fields of previous contact
    public void updateContact(@PathVariable String name , @RequestBody Person newVersion) {  //read person fields from http request body    
  		//personDAL.deleteContact(name);
   		//personDAL.addContact(person);   

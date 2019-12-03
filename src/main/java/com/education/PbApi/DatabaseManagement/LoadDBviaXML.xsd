@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/LoadDBviaXML" xmlns:tns="http://www.example.org/LoadDBviaXML" elementFormDefault="qualified">
+ 
+<element name="ContactList">
+    <complexType>
+      <sequence>
+        <element name="Person" maxOccurs="unbounded" minOccurs="0">
+          <complexType>
+            <sequence>
+              <element name="Name"/>
+              <element name="HomeNumber"/>
+              <element name="WorkNumber"/>
+              <element name="CellNumber"/>
+              <element name="Email"/>
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+
+</schema>
