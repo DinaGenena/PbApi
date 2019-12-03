@@ -1,5 +1,0 @@
-For Testing the API , Postman was prefered over performing unit tests .
-For the collection of requests spanning over all available services , please see the link below :
-
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/e96668626a8a21ac8234)
