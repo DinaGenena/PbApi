@@ -25,7 +25,7 @@ A method to return the entire contact list
 ## GET /contactList/{name} : 
 A method to return a specific contact in the  contact list 
 
-## POST http://localhost:8080/contactList : 
+## POST /contactList : 
 A method  to add new user in the below JSON format 
 {
     "name": "Personx,
@@ -35,7 +35,7 @@ A method  to add new user in the below JSON format
     "email": "xxxx"
 }
 
-## PUT /contactList/update/Personx : 
+## PUT /contactList/update/{name} : 
 A method  to update existing user , user should be privided with updated data  in the below JSON format
 note : name is the key value hence a new name mens a new entry and not an update 
 {
