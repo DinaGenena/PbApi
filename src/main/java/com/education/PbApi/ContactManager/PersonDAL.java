@@ -45,7 +45,6 @@ public class PersonDAL {
 		  contactList.remove(tmpPerson) ;
 		}
 	  
-	  
   } 
   
   

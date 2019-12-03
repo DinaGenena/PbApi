@@ -1,11 +1,14 @@
 package com.education.PbApi.ContactManager;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
 
 //@Entity   //for JPA to map to db table with the same name  .. not implemented , using static arrayList instead 
 public class Person {
 
-
+   //  @Id  
 	private String name ; 
 	private String homeNumber ; 
 	private String cellNumber ; 
